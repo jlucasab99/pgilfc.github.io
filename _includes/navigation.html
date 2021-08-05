@@ -1,6 +1,19 @@
-<nav>
+
+<div id="cross-vertical" class="cross cross-vertical d-none d-lg-block"></div>
+<nav class="navbar navbar-light fixed-top">
+  {% if page.layout == "pushed" %}
+    <div id="cross-horizontal-white"></div>
+    <div id="cross-head"></div>
+  {% endif %}
+  <div id="cross-horizontal" class="cross cross-horizontal"></div>
+  <div class="container-fluid px-5">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/images/brasao.png" alt="brasao" height="80" width="95.5">
+    </a>
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      <div class="nav-item">
+        <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
+      </div>  
     {% endfor %}
-  </nav>
-  
+  </div>
+</nav>

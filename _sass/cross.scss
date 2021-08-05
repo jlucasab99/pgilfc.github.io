@@ -1,0 +1,53 @@
+
+.cross {
+    background-color: $afonsina-blue;
+}
+
+.cross-vertical{
+    height: 100%;
+    width: $cross-thickness;
+}
+
+.cross-horizontal{
+    width: 100%;
+    height: $cross-thickness;
+}
+
+.cross-white-block {
+    width: 100%;
+    height: $cross-thickness * 3;
+}
+
+#cross-vertical {
+    position: absolute;
+    top: 0;
+    left: 76px;
+    z-index: -1;
+}
+
+#cross-horizontal {
+    position: fixed;
+    z-index:-1;
+    top: 33px;
+    left: 0;
+}
+
+#cross-horizontal-white {
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+#cross-head {
+    position: fixed;
+    z-index:-1;
+    top: 0;
+    left: 76px;
+    height: 50px;
+    width: $cross-thickness;
+    background-color: $afonsina-blue;
+}
