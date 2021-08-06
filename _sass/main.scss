@@ -1,8 +1,54 @@
 
 @import "variables";
+@import "fonts";
 
 body {
+    font-family: "montserrat-regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     position: relative;
+}
+
+header {
+    position: fixed;
+    z-index: $z-index-header;
+}
+
+footer {
+    position:relative;
+    z-index: $z-index-footer;
+}
+
+.under-header {
+    padding-top: $header-size;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.index-title {
+    font-size: 4rem;
+    font-family: 'montserrat-medium', sans-serif;
+}
+.index-subtitle {
+    font-size: 1.2rem;
+    font-family: 'montserrat-medium', sans-serif;
+    letter-spacing: .3rem;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .index-title {
+        font-size: 2rem;
+    }
+    .index-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+#index-sobre {
+    background-color: $afonsina-brick;
 }
 
 @import "cross";

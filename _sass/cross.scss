@@ -1,5 +1,9 @@
 
-.cross {
+.cross-white {
+    background-color: white;
+}
+
+.cross-blue {
     background-color: $afonsina-blue;
 }
 
@@ -15,14 +19,14 @@
 
 .cross-white-block {
     width: 100%;
-    height: $cross-thickness * 3;
+    height: $header-size / 2;
 }
 
 #cross-vertical {
     position: absolute;
     top: 0;
     left: 76px;
-    z-index: -1;
+    z-index: $z-index-header-cross;
 }
 
 #cross-horizontal {
