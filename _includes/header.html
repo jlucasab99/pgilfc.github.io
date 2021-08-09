@@ -1,12 +1,11 @@
 
 <div id="cross-vertical" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-vertical d-none d-lg-block"></div>
+{% if page.layout != 'default' %}
+  <div id="cross-horizontal-white"></div>
+{% endif %}
+<div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
 <header>
   <nav class="navbar navbar-light vw-100">
-    {% if page.layout != 'default' %}
-      <div id="cross-horizontal-white"></div>
-      <div id="cross-head"></div>
-    {% endif %}
-    <div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="/">
         <img src="/assets/images/brasao.png" alt="brasao" height="80" width="95.5">
@@ -27,6 +26,7 @@
 </header>
 
 <div id="sidebar" class="d-none">
+  <div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
   <div class="d-flex flex-row vh-100">
       <div class="d-flex flex-column px-3 {% if page.layout != 'default' %} bg-white {% else %} background-dark {% endif %} under-header">
           <ul class="nav flex-column mb-auto pt-3">
