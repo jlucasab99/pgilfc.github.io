@@ -42,6 +42,5 @@ defaults:
       layout: "default"
 
 collections:
-  afonsinos:
   cds:
   cidade_berco:
