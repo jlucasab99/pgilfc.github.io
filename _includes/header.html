@@ -1,0 +1,49 @@
+
+<div id="cross-vertical" class=" {% if page.layout == 'pushed' %} cross-blue {% else %} cross-white {% endif %} cross-vertical d-none d-lg-block"></div>
+<header>
+  <nav class="navbar navbar-light vw-100">
+    {% if page.layout == "pushed" %}
+      <div id="cross-horizontal-white"></div>
+      <div id="cross-head"></div>
+    {% endif %}
+    <div id="cross-horizontal" class=" {% if page.layout == 'pushed' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/images/brasao.png" alt="brasao" height="80" width="95.5">
+      </a>
+      <div class="nav-item">
+        <div class="d-flex flex-row" onclick="toggleMenu()" style="cursor: pointer;">
+          <span class="px-2 d-none d-lg-block {% if page.layout == 'pushed' %} text-white {% endif %}">Menu</span>
+          <div id="menu-icon"  class="burger-icon {% if page.layout == 'pushed' %} burger-white {% else %} burger-black {% endif %}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div id="sidebar" class="d-none">
+  <div class="d-flex flex-row vh-100">
+      <div class="d-flex flex-column px-3 {% if page.layout == 'pushed' %} bg-white {% else %} bg-dark {% endif %} under-header">
+          <ul class="nav flex-column mb-auto pt-3">
+              {% for item in site.data.navigation %}
+                  <li class="nav-item">
+                      <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %} {% if page.layout == 'pushed' %} text-dark {% else %} text-white {% endif %} {% endif %}">{{ item.name }}</a>
+                  </li>  
+              {% endfor %}
+          </ul>
+      </div>
+      <div class="{% if page.layout == 'pushed' %} cross-blue {% else %} cross-white {% endif %} cross-vertical"></div>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("d-none");
+    document.getElementById("menu-icon").classList.toggle("open");
+  }
+</script>

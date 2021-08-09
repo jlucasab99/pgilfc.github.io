@@ -1,0 +1,15 @@
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-sidebar;
+}
+
+.nav-link {
+    color: $afonsina-blue;
+}
+
+.nav-link-active {
+    background-color: white !important;
+}

@@ -1,8 +1,14 @@
-- name: Home
+- name: Página Principal
   link: /
-- name: About
-  link: /about/
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Historia
+  link: /historia
+- name: Brasão
+  link: /Brasão
+- name: Traje
+  link: /traje
+- name: Afonsinos
+  link: /afonsinos
+- name: Cidade Berço
+  link: /cidade-berco
+- name: Contactos
+  link: /contactos

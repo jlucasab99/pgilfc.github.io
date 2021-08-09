@@ -3,7 +3,8 @@ $afonsina-blue: #0928c1;
 $afonsina-brick: #812a0e;
 
 $z-index-header: 10000;
-$z-index-header-cross: $z-index-header - 1;
+$z-index-sidebar: $z-index-header - 1;
+$z-index-header-cross: $z-index-sidebar - 1;
 $z-index-footer: $z-index-header + 1;
 
 $header-size: 100px;
