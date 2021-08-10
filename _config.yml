@@ -40,7 +40,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-
-collections:
-  cds:
-  cidade_berco:

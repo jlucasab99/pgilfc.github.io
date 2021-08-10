@@ -1,3 +1,0 @@
----
-name: I Cidade Berço
----
