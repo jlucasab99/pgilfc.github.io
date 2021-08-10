@@ -1,6 +1,9 @@
 
 @import "variables";
 @import "fonts";
+@import "cross";
+@import "burger";
+@import "sidebar";
 
 body {
     font-family: "montserrat-regular", sans-serif;
@@ -29,6 +32,12 @@ footer {
     border-radius: 0 !important;
 }
 
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+  
+
 .index-title {
     font-size: 4rem;
     font-family: 'montserrat-medium', sans-serif;
@@ -53,6 +62,10 @@ footer {
     background-color: $afonsina-brick;
 }
 
-@import "cross";
-@import "burger";
-@import "sidebar";
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
