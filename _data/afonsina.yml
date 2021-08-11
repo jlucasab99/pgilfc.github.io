@@ -179,4 +179,9 @@ geracoes:
     - dragao_de_komossos
     - lusco_fusco
     - revelvesvas
+  - geracao: 2021
+    elementos:
+    - misso
+    - shiuvaca
+    - tigrao
 
