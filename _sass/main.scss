@@ -1,9 +1,9 @@
 
 @import "variables";
 @import "fonts";
-@import "cross";
-@import "burger";
-@import "sidebar";
+@import "header/cross";
+@import "header/burger";
+@import "header/sidebar";
 
 body {
     font-family: "montserrat-regular", sans-serif;

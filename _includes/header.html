@@ -28,16 +28,16 @@
 <div id="sidebar" class="d-none">
   <div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
   <div class="d-flex flex-row vh-100">
-      <div class="d-flex flex-column px-3 {% if page.layout != 'default' %} bg-white {% else %} background-dark {% endif %} under-header">
-          <ul class="nav flex-column mb-auto pt-3">
-              {% for item in site.data.navigation %}
-                  <li class="nav-item">
-                      <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %} {% if page.layout != 'default' %} text-dark {% else %} text-white {% endif %} {% endif %}">{{ item.name }}</a>
-                  </li>  
-              {% endfor %}
-          </ul>
-      </div>
-      <div class="{% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-vertical"></div>
+    <div class="{% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-vertical"></div>
+    <div class="d-flex flex-column px-3 {% if page.layout != 'default' %} bg-white {% else %} bg-dark {% endif %} under-header">
+        <ul class="nav flex-column mb-auto pt-3">
+            {% for item in site.data.navigation %}
+                <li class="nav-item">
+                    <a href="{{ item.link }}" class="nav-link {% if page.layout != 'default' %} {% if page.url == item.link %} text-dark {% endif %} {% else %} text-white {% endif %}">{{ item.name }}</a>
+                </li>  
+            {% endfor %}
+        </ul>
+    </div>
   </div>
 </div>
 
@@ -45,5 +45,6 @@
   function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("d-none");
     document.getElementById("menu-icon").classList.toggle("open");
+    document.getElementById("cross-vertical").classList.toggle("d-lg-block");
   }
 </script>

@@ -2,7 +2,7 @@
 #sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: $z-index-sidebar;
 }
 
@@ -12,8 +12,4 @@
 
 .nav-link-active {
     background-color: white !important;
-}
-
-.background-dark {
-    background-color: #979797;
 }
