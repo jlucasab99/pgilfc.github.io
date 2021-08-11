@@ -6,12 +6,21 @@ permalink: /afonsinos
 
 
 <div class="d-flex flex-row-reverse m-2">
-  <button class="btn btn-outline-dark btn-lg" role="button" onclick="toggleAccordions()"> Mostrar todos </button>
-
+  <button id="mostrartodos" class="btn btn-outline-dark btn-lg" role="button" onclick="toggleAccordions()"> Mostrar todos </button>
   <script>
     function toggleAccordions() {
-      document.querySelectorAll(".accordion-collapse").forEach(elem => elem.classList.toggle("show"));
-      document.querySelectorAll(".accordion-button").forEach(elem => elem.classList.toggle("collapsed"));
+      var acbttn = document.querySelectorAll(".accordion-button")
+      var acelem = document.querySelectorAll(".accordion-collapse")
+      if (document.getElementById("mostrartodos").dataset.open === "true") {
+        acelem.forEach(elem => elem.classList.remove("show"));
+        acbttn.forEach(elem => elem.classList.add("collapsed"));
+        document.getElementById("mostrartodos").dataset.open = ""
+      } else {
+        acelem.forEach(elem => elem.classList.add("show"));
+        acbttn.forEach(elem => elem.classList.remove("collapsed"));
+        document.getElementById("mostrartodos").dataset.open = "true"
+      }
+
     }
   </script>
 </div>
