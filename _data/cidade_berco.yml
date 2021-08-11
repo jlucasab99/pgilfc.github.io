@@ -1,7 +1,7 @@
 
 - nome: I Cidade Berço
   imagem: i.jpg
-  data: 22 e 23 de Outubro de 199?
+  data: 22 e 23 de Outubro de 1999
   tunas_concurso:
     - TAL
     - Tuna de Medicina do porto
@@ -51,7 +51,7 @@
 
 - nome: VI Cidade Berço
   imagem: vi.jpg
-  data: 20 e 21 de Novembro de 20??
+  data: 20 e 21 de Novembro de 2009
   tunas_concurso:
     - Tunadão 1998
     - TEUP
@@ -60,7 +60,7 @@
 
 - nome: VII Cidade Berço
   imagem: vii.jpg
-  data: 12 e 13 de Novembro de 20??
+  data: 12 e 13 de Novembro de 2010
   tunas_concurso:
     - Estudantina Universitária de Coimbra
     - Tuna da Universidade Católica Portuguesa
@@ -69,7 +69,7 @@
 
 - nome: VIII Cidade Berço
   imagem: viii.jpg
-  data: 11 e 12 de Novembro de 20??
+  data: 11 e 12 de Novembro de 2011
   tunas_concurso:
     - Luz & Tuna
     - TUIST
@@ -78,7 +78,7 @@
 
 - nome: IX Cidade Berço
   imagem: ix.jpg
-  data: 2 e 3 de Novembro de 20??
+  data: 2 e 3 de Novembro de 2012
   tunas_concurso:
     - TAL
     - Luz & Tuna
@@ -87,7 +87,7 @@
 
 - nome: X Cidade Berço
   imagem: x.jpg
-  data: 7 e 8 de Março de 201?
+  data: 7 e 8 de Março de 2014
   tunas_concurso:
     - Luz & Tuna
     - TEUP
@@ -96,7 +96,7 @@
 
 - nome: XI Cidade Berço
   imagem: xi.jpg
-  data: 27 e 28 de Março de 201?
+  data: 27 e 28 de Março de 2015
   tunas_concurso:
     - Luz & Tuna
     - Azeituna
@@ -105,7 +105,7 @@
 
 - nome: XII Cidade Berço
   imagem: xii.jpg
-  data: 4 e 5 de Março de 201?
+  data: 4 e 5 de Março de 2016
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
     - Gatunos
@@ -114,7 +114,7 @@
 
 - nome: XIII Cidade Berço
   imagem: xiii.jpg
-  data: 2 e 3 de de Março de 201?
+  data: 2 e 3 de de Março de 2018
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
     - Luz & Tuna
@@ -123,7 +123,7 @@
 
 - nome: XIV Cidade Berço
   imagem: xiv.jpg
-  data: 8 e 9 de Março de 201?
+  data: 8 e 9 de Março de 2019
   tunas_concurso:
     - TAL
     - Tuna Templária de Tomar
