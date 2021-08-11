@@ -7,7 +7,7 @@ permalink: /cidade-berco
 <p> Cidade Berço - Festival de Tunas Académicas </p>
 <p>
   O maior evento organizado pela Afonsina, é um festival de tunas académicas realizado na cidade de Guimarães.
-  O evento encontra-se já na sua {{ site.data.cidade_berco | size}}ª edição e tem contado com a presença de algumas das melhores tunas do Universo!
+  O festival encontra-se já na sua {{ site.data.cidade_berco | size}}ª edição e tem contado com a presença de algumas das melhores tunas do Universo!
 </p>
 <br>
 {% for cv in site.data.cidade_berco %}
@@ -15,6 +15,7 @@ permalink: /cidade-berco
     <div class="row fotoframe p-4">
       <div class="col-12 col-md-8">
         <p class="fs-1"><strong>{{ cv.nome }}</strong></p>
+        <p><strong>{{ cv.data }}</strong></p>
         <p class="fs-4"><strong>Tunas a concurso:</strong></p>
         {% for tuna in cv.tunas_concurso %}
           <p>{{ tuna }}</p>
