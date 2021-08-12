@@ -30,6 +30,13 @@
   imagem: iii.jpg
   data: 19 e 20 de Outubro de 2001
   tunas_concurso:
+    - Tuna Universitária de Aveiro
+    - Tuna de Medicina de Coimbra
+    - TAL
+    - EStudantina Universitária de Lisboa
+    - Tuna de Universitários O Barco
+    - Tuna do Magistério de AvilaS
+  
 
 - nome: IV Cidade Berço
   imagem: iv.jpg
@@ -109,7 +116,7 @@
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
     - Gatunos
-    - TMUC
+    - Tuna de Medicina de Coimbra
     - Transmontuna
 
 - nome: XIII Cidade Berço
