@@ -1,5 +1,4 @@
 
-<div id="cross-vertical" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-vertical d-none d-lg-block"></div>
 {% if page.layout != 'default' %}
   <div id="cross-horizontal-white"></div>
 {% endif %}
@@ -45,6 +44,5 @@
   function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("d-none");
     document.getElementById("menu-icon").classList.toggle("open");
-    document.getElementById("cross-vertical").classList.toggle("d-lg-block");
   }
 </script>

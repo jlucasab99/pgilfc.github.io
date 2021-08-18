@@ -22,13 +22,6 @@
     height: $header-size / 2;
 }
 
-#cross-vertical {
-    position: absolute;
-    top: 0;
-    left: 76px;
-    z-index: $z-index-header-cross;
-}
-
 #cross-horizontal {
     position: fixed;
     z-index: $z-index-header-cross;
