@@ -3,10 +3,6 @@
     background-color: white;
 }
 
-.cross-blue {
-    background-color: $afonsina-blue;
-}
-
 .cross-vertical{
     height: 100%;
     width: $cross-thickness;
@@ -29,12 +25,12 @@
     left: 0;
 }
 
-#cross-horizontal-white {
+#cross-horizontal-top {
     position: fixed;
     z-index: $z-index-header-white-overlay;
     top: 0;
     left: 0;
+    right: 0;
     height: 50px;
-    width: 100%;
-    background-color: white;
+    background-color: rgba($color: white, $alpha: 0.7);
 }
