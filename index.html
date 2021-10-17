@@ -1,12 +1,14 @@
 ---
 layout: default
 title: Home
-main-image: /assets/images/cidadeBerco.jpg
+background-image: /assets/images/cidadeBerco.jpg
 ---
+
+{% include background-image.html %}
 
 <!-- home ================================================== -->
 <section id="home">
-    <div class="d-flex align-items-center vh-100 under-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ page.main-image }}'); background-position: center center; background-repeat:no-repeat; background-size: cover;">
+    <div class="d-flex align-items-center vh-100 under-header" >
         <div class="container text-white py-5">
             <div class="row">
                 <div class="col-1"></div>

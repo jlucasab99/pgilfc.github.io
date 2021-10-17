@@ -2,7 +2,10 @@
 layout: contained-with-title
 title: Cidade Berço
 permalink: /cidade-berco
+background-image: /assets/images/cidadeBerco.jpg
 ---
+
+{% include background-image.html %}
 
 <p> Cidade Berço - Festival de Tunas Académicas </p>
 <p>
@@ -11,8 +14,8 @@ permalink: /cidade-berco
 </p>
 <br>
 {% for cv in site.data.cidade_berco %}
-  <div class="container p-3">
-    <div class="row fotoframe p-4">
+  <div class="container fotoframe p-3">
+    <div class="row p-4">
       <div class="col-12 col-md-8">
         <p class="fs-1"><strong>{{ cv.nome }}</strong></p>
         <p><strong>{{ cv.data }}</strong></p>

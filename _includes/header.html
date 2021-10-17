@@ -1,8 +1,5 @@
 
-{% if page.layout != 'default' %}
-  <div id="cross-horizontal-white"></div>
-{% endif %}
-<div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
+<div id="cross-horizontal" class="cross-white cross-horizontal"></div>
 <header>
   <nav class="navbar navbar-light vw-100">
     <div class="container-fluid px-5">
@@ -11,8 +8,8 @@
       </a>
       <div class="nav-item">
         <div class="d-flex flex-row" onclick="toggleMenu()" style="cursor: pointer;">
-          <span class="px-2 d-none d-lg-block {% if page.layout != 'default' %} text-white {% endif %}">Menu</span>
-          <div id="menu-icon"  class="burger-icon {% if page.layout != 'default' %} burger-white {% else %} burger-black {% endif %}">
+          <span class="px-2 d-none d-lg-block">Menu</span>
+          <div id="menu-icon"  class="burger-icon burger-black">
             <span></span>
             <span></span>
             <span></span>
@@ -25,14 +22,14 @@
 </header>
 
 <div id="sidebar" class="d-none">
-  <div id="cross-horizontal" class=" {% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-horizontal"></div>
+  <div id="cross-horizontal" class="cross-white cross-horizontal"></div>
   <div class="d-flex flex-row vh-100">
-    <div class="{% if page.layout != 'default' %} cross-blue {% else %} cross-white {% endif %} cross-vertical"></div>
-    <div class="d-flex flex-column px-3 {% if page.layout != 'default' %} bg-white {% else %} bg-dark {% endif %} under-header">
+    <div class="cross-white cross-vertical"></div>
+    <div class="d-flex flex-column px-3 bg-dark under-header">
         <ul class="nav flex-column mb-auto pt-3">
             {% for item in site.data.navigation %}
                 <li class="nav-item">
-                    <a href="{{ item.link }}" class="nav-link {% if page.layout != 'default' %} {% if page.url == item.link %} text-dark {% endif %} {% else %} text-white {% endif %}">{{ item.name }}</a>
+                    <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %} text-decoration-underline {% endif %} text-white">{{ item.name }}</a>
                 </li>  
             {% endfor %}
         </ul>
