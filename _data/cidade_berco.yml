@@ -2,6 +2,7 @@
 - nome: I Cidade Berço
   imagem: i.jpg
   data: 22 e 23 de Outubro de 1999
+  rectangular: true
   tunas_concurso:
     - TAL
     - Tuna de Medicina do porto
@@ -122,6 +123,7 @@
 - nome: XIII Cidade Berço
   imagem: xiii.jpg
   data: 2 e 3 de de Março de 2018
+  rectangular: true
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
     - Luz & Tuna
