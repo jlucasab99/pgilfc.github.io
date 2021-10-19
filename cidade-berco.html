@@ -19,7 +19,7 @@ background-image: /assets/images/cidadeBerco.jpg
     {% assign cbn = 0 %}
     {% for cb in site.data.cidade_berco %}
       <div class="p-1 {% unless cb.rectangular %} col-4 col-lg-3 {% else %} col-8 col-lg-6 {% endunless %}" >
-        <img src="/assets/images/cidade_berco/{{ cb.imagem }}" class="img-fluid fotoframe p-1" alt="{{ cb.nome }}" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-cb-{{cbn}}">
+        <img src="/assets/images/cidade_berco/{{ cb.imagem }}" class="zoom img-fluid fotoframe p-1" alt="{{ cb.nome }}" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-cb-{{cbn}}">
       </div>
 
         <!-- Modal -->
@@ -40,6 +40,11 @@ background-image: /assets/images/cidadeBerco.jpg
                       {% for tuna in cb.tunas_concurso %}
                         <p>{{ tuna }}</p>
                       {% endfor %}
+                      {% if cb.playlist %}
+                        <br>
+                        <br>
+                        <p class="fs-4"><strong>Assiste <a href="{{cb.playlist}}" class="link-light"> aqui!</a></strong></p>
+                      {% endif %}
                     </div>
                     <div class="col-12 col-md-6">
                       <img src="/assets/images/cidade_berco/{{ cb.imagem }}" class="img-fluid float-end" alt="{{ cb.nome }}">

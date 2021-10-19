@@ -105,6 +105,7 @@
 - nome: XI Cidade Berço
   imagem: xi.jpg
   data: 27 e 28 de Março de 2015
+  playlist: https://www.youtube.com/watch?v=gLw0J4Kckrw&list=PLDBIxgVhQwAc9_lwqENFlNaLZq708cLqm
   tunas_concurso:
     - Luz & Tuna
     - Azeituna
@@ -114,6 +115,7 @@
 - nome: XII Cidade Berço
   imagem: xii.jpg
   data: 4 e 5 de Março de 2016
+  playlist: https://www.youtube.com/watch?v=gLw0J4Kckrw&list=PLDBIxgVhQwAc9_lwqENFlNaLZq708cLqm
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
     - Gatunos
@@ -123,6 +125,7 @@
 - nome: XIII Cidade Berço
   imagem: xiii.jpg
   data: 2 e 3 de de Março de 2018
+  playlist: https://www.youtube.com/watch?v=AZeT4Y98M0s&list=PLDBIxgVhQwAe0XdsD8iPTYkll9osj67A3
   rectangular: true
   tunas_concurso:
     - Estudantina Académica de Castelo Branco
@@ -133,6 +136,7 @@
 - nome: XIV Cidade Berço
   imagem: xiv.jpg
   data: 8 e 9 de Março de 2019
+  playlist: https://www.youtube.com/watch?v=Z5se07tZIQY&list=PLDBIxgVhQwAcvC8a8-VvC4n_aXsx9zVNj
   tunas_concurso:
     - TAL
     - Tuna Templária de Tomar
@@ -142,6 +146,7 @@
 - nome: XV Cidade Berço
   imagem: xv.jpg
   data: 6 e 7 de Março de 2020
+  playlist: https://www.youtube.com/watch?v=TabLnisugO0&list=PLDBIxgVhQwAd5rXi9spMURaDQJUd9MQvp
   tunas_concurso:
     - Desertuna
     - Luz & Tuna
