@@ -75,11 +75,19 @@ background-image: /assets/images/cidadeBerco.jpg
                           {% if gen == 0 %} <p><strong> Membro Fundador </strong></p> {% else %} <p><strong>Numero de Pendericalho:</strong>  {{ tuno.numero }} </p> {% endif %}
                           <p><strong>Alcunha:</strong> {{ tuno.alcunha }}</p>
                           <p><strong>Nome:</strong> {{ tuno.nome }}</p>
-                          <p><strong>Instrumento:</strong> {{ tuno.instrumento }}</p>
+                          {% if tuno.instrumento != Blank %}
+                            <p><strong>Instrumento:</strong> {{ tuno.instrumento }}</p>
+                          {% endif %}
                           {% if gen != 0 %}
-                          <p><strong>Evento de passagem:</strong> {{ tuno.passagem_evento }}</p>
-                          <p><strong>Local de passagem:</strong> {{ tuno.passagem_local }}</p>
-                          <p><strong>Data de passagem:</strong> {{ tuno.passagem_data }}</p>
+                            {% if tuno.passagem_evento != Blank %}
+                              <p><strong>Evento de passagem:</strong> {{ tuno.passagem_evento }}</p>
+                            {% endif %}
+                            {% if tuno.passagem_local != Blank %}
+                              <p><strong>Local de passagem:</strong> {{ tuno.passagem_local }}</p>
+                            {% endif %}
+                            {% if tuno.passagem_data != Blank %}
+                              <p><strong>Data de passagem:</strong> {{ tuno.passagem_data }}</p>
+                            {% endif %}
                           {% endif %}
                         </div>
                       </div>
