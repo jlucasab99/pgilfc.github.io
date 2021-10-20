@@ -25,7 +25,9 @@
   <div id="cross-horizontal" class="cross-white cross-horizontal"></div>
   <div class="d-flex flex-row vh-100">
     <div class="cross-white cross-vertical"></div>
-    <div class="d-flex flex-column px-3 under-header" style="background-color:rgba(0, 0, 0, 0.3);">
+    <div class="overflow-hidden">
+    <div class="flagbar"><div class="background-img"></div></div>
+      <div class="d-flex flex-column px-3 under-header h-100" style="background-color:rgba(0, 0, 0, 0.3);">
         <ul class="nav flex-column mb-auto pt-3">
             {% for item in site.data.navigation %}
                 <li class="nav-item">
@@ -33,6 +35,7 @@
                 </li>  
             {% endfor %}
         </ul>
+      </div>
     </div>
   </div>
 </div>
