@@ -19,7 +19,7 @@ background-image: /assets/images/cidadeBerco.webp
     {% assign cbn = 0 %}
     {% for cb in site.data.cidade_berco %}
       <div class="p-1 {% unless cb.rectangular %} col-4 col-lg-3 {% else %} col-8 col-lg-6 {% endunless %}" >
-        <img src="/assets/images/cidade_berco/{{ cb.imagem }}" class="zoom img-fluid fotoframe p-1" alt="{{ cb.nome }}" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-cb-{{cbn}}">
+        <img src="/assets/images/cidade_berco/{{ cb.imagem }}" loading="lazy" class="zoom img-fluid fotoframe p-1" alt="{{ cb.nome }}" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-cb-{{cbn}}">
       </div>
 
         <!-- Modal -->
@@ -47,7 +47,7 @@ background-image: /assets/images/cidadeBerco.webp
                       {% endif %}
                     </div>
                     <div class="col-12 col-md-6">
-                      <img src="/assets/images/cidade_berco/{{ cb.imagem }}" class="img-fluid float-end" alt="{{ cb.nome }}">
+                      <img src="/assets/images/cidade_berco/{{ cb.imagem }}" loading="lazy" class="img-fluid float-end" alt="{{ cb.nome }}">
                     </div>
                   </div>
                 </div>
