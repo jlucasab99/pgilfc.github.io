@@ -40,3 +40,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+exclude:
+  - CNAME
+  - Dockerfile
+  - Makefile
+  - README.md
