@@ -5,6 +5,11 @@
 @import "header/burger";
 @import "header/sidebar";
 
+html {
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+}
+
 body {
     font-family: "montserrat-regular", sans-serif;
     font-style: normal;
