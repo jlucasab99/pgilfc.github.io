@@ -6,8 +6,8 @@
 @import "header/sidebar";
 
 html {
-    height: 100vh; /* set viewport constraint */
-    min-height: 100%; /* enforce height */
+    height: 100vh;
+    min-height: 100%;
 }
 
 body {
@@ -111,8 +111,10 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
     z-index: -1;
     overflow: hidden;
     background-attachment: fixed;
@@ -127,14 +129,15 @@ footer {
     background-size: cover;
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
     -webkit-filter: blur(6px);
     -moz-filter: blur(6px);
     -o-filter: blur(6px);
     -ms-filter: blur(6px);
     filter: blur(6px);
     z-index: -1;
-    margin: -10%;
 }
