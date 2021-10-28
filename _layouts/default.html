@@ -17,8 +17,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body>
-    {% include background-image.html %}
+  <body class="background-class" style="background-image: url('{{ page.background-image }}');">
+    <div class="background-img" style="background-image: url('{{ page.background-image }}');"></div>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
