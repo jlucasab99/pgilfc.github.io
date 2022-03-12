@@ -184,4 +184,8 @@ geracoes:
     - misso
     - shiuvaca
     - tigrao
+  - geracao: 2022
+    elementos:
+    - langonha
+    - tanejo
 

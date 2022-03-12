@@ -37,7 +37,7 @@
     - EStudantina Universitária de Lisboa
     - Tuna de Universitários O Barco
     - Tuna do Magistério de AvilaS
-  
+
 
 - nome: IV Cidade Berço
   imagem: iv.jpg
@@ -151,3 +151,13 @@
     - Luz & Tuna
     - TAL
     - Versus Tuna
+
+- nome: XVI Cidade Berço
+  imagem: xvi.jpg
+  data: 4 e 5 de Março de 2022
+  playlist:
+  tunas_concurso:
+    - TMUC
+    - TUA
+    - TMP
+    - Tunadão 1998
