@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Página Principal",
+    "link": "/"
+  },
+  {
+    "name": "História",
+    "link": "/historia"
+  },
+  {
+    "name": "Brasão",
+    "link": "/brasao"
+  },
+  {
+    "name": "Traje",
+    "link": "/traje"
+  },
+  {
+    "name": "Afonsinos",
+    "link": "/afonsinos"
+  },
+  {
+    "name": "Cidade Berço",
+    "link": "/cidade-berco"
+  },
+  {
+    "name": "Contactos",
+    "link": "/contactos"
+  }
+]

@@ -1,24 +1,21 @@
 # Website for Afonsina - Tuna de Engenharia da Universidade do Minho
 
 ## To run on your own machine
-- Install docker
-- Build it:
-    ```bash
-    make build
-    ```
-    or
-    ```bash
-    docker build -t afonsina/afonsina . #may need sudo
-    ```
-- Serve it:
-    ```bash
-    make serve
-    ```
-    or
-    ```bash
-    docker run -v ${PWD}:/app -v ${PWD}/vendor/bundle:/usr/local/bundle -p 4000:4000 -it --rm --name afonsina afonsina/afonsina #may need sudo
-    ```
-- As an alternative you can also install Jekyll on your machine...
+Should have npm installed on your machine.  
+All commands are run from the root of the project, from a terminal:
+
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
+
+## Dependencies
+ - Astro
+ - Svelte
+ - tailwindcss
+ - daisyui
 
 ## To help out
 - First time:
