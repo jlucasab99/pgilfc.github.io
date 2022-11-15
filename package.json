@@ -1,0 +1,35 @@
+{
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && svelte-check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/image": "^0.3.4",
+    "@astrojs/prefetch": "^0.0.7",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "@typescript-eslint/parser": "^5.30.7",
+    "astro": "^1.0.6",
+    "eslint": "^8.20.0",
+    "eslint-plugin-astro": "^0.15.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.1.2",
+    "sass": "^1.53.0",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.8.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "daisyui": "^2.19.1",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}

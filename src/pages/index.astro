@@ -1,0 +1,16 @@
+---
+import Default from "@/layouts/Default.astro";
+import About from "@/components/index/About.astro";
+import Home from "@/components/index/Home.astro";
+---
+
+<Default preloadImage={ [import.meta.env.PUBLIC_DEFAULT_TUNO] }>
+  <!-- home ================================================== -->
+  <Home />
+  <!-- end home -->
+
+  <!-- about ================================================== -->
+  <About />
+  <!-- end about -->
+
+</Default>
