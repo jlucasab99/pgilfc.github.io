@@ -15,6 +15,9 @@ const title: string = page.title;
 const description: string = page.description;
 const author: string = page.author;
 const defaultImage: string = import.meta.env.PUBLIC_DEFAULT_IMAGE
+const backgroundImage: string = import.meta.env.PUBLIC_DEFAULT_BACKGROUND
+const headerImage: string = import.meta.env.PUBLIC_DEFAULT_HEADER
+const footerImage: string = import.meta.env.PUBLIC_DEFAULT_FOOTER
 ---
 
 <!DOCTYPE html>
@@ -28,6 +31,9 @@ const defaultImage: string = import.meta.env.PUBLIC_DEFAULT_IMAGE
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="preload" href={defaultImage} as="image">
+		<link rel="preload" href={backgroundImage} as="image">
+		<link rel="preload" href={headerImage} as="image">
+		<link rel="preload" href={footerImage} as="image">
 		{preloadImage.map((item: string) => (
 			<link rel="preload" href={item} as="image">
 		))}
@@ -51,6 +57,7 @@ const defaultImage: string = import.meta.env.PUBLIC_DEFAULT_IMAGE
 				font-family: "Arimo";
 				font-style: normal;
 				font-weight: 600;
+				font-display: swap;
 				src: url("/assets/fonts/arimo/arimo-v27-latin-600.eot"); /* IE9 Compat Modes */
 				src: local(""),
 					url("/assets/fonts/arimo/arimo-v27-latin-600.eot?#iefix")

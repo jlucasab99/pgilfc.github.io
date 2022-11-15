@@ -15,10 +15,12 @@
 			<div class="flex-1">
 				<a href="/">
 					<img
-						src="/assets/images/brasao.webp"
+						src="/assets/images/brasao-header.webp"
 						loading="lazy"
 						alt="brasao"
 						class="h-24 w-28"
+						height="96"
+						width="112"
 					/>
 				</a>
 			</div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	const backgroundImage: string = "/assets/images/cidadeBerco.webp";
+	const backgroundImage: string = "/assets/images/cidade_berco.webp";
 	const backgroundStyle: string =
 		"background-image: url(" + backgroundImage + ");";
 </script>

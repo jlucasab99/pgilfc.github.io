@@ -2,6 +2,9 @@
 
 interface ImportMetaEnv {
     readonly PUBLIC_DEFAULT_IMAGE: string;
+    readonly PUBLIC_DEFAULT_BACKGROUND: string;
+    readonly PUBLIC_DEFAULT_HEADER: string;
+    readonly PUBLIC_DEFAULT_FOOTER: string;
     readonly PUBLIC_DEFAULT_TUNO: string;
 }
 
