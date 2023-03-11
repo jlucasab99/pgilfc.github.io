@@ -2,10 +2,15 @@
 import Default from "@/layouts/Default.astro";
 import About from "@/components/index/About.astro";
 import Home from "@/components/index/Home.astro";
+import CBMarketing from "@/components/index/CBMarketing.astro";
 ---
 
 <Default preloadImage={ [import.meta.env.PUBLIC_DEFAULT_TUNO] }>
-  <!-- home ================================================== -->
+  <!-- CBMarketing ================================================== -->
+  <CBMarketing />
+  <!-- end CBMarketing -->
+
+	<!-- home ================================================== -->
   <Home />
   <!-- end home -->
 
