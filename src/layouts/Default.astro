@@ -18,6 +18,8 @@ const defaultImage: string = import.meta.env.PUBLIC_DEFAULT_IMAGE
 const backgroundImage: string = import.meta.env.PUBLIC_DEFAULT_BACKGROUND
 const headerImage: string = import.meta.env.PUBLIC_DEFAULT_HEADER
 const footerImage: string = import.meta.env.PUBLIC_DEFAULT_FOOTER
+const gaTrackingCode: string = import.meta.env.GOOGLE_ANALYTICS_TRACKING_CODE
+const gaTrackingCodeUrl = "https://www.googletagmanager.com/gtag/js?id=" + gaTrackingCode;
 ---
 
 <!DOCTYPE html>
@@ -43,6 +45,17 @@ const footerImage: string = import.meta.env.PUBLIC_DEFAULT_FOOTER
 		{prefetchImage.map((item: string) => (
 			<link rel="prefetch" href={item} as="image">
 		))}
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="text/partytown" async src={gaTrackingCodeUrl}></script>
+		<script type="text/partytown" define:vars={{ gaTrackingCode, gaTrackingCodeUrl }}>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				window.dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", gaTrackingCode);
+		</script>
 	</head>
 
 	<body>
