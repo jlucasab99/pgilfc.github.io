@@ -6,6 +6,7 @@ interface ImportMetaEnv {
     readonly PUBLIC_DEFAULT_HEADER: string;
     readonly PUBLIC_DEFAULT_FOOTER: string;
     readonly PUBLIC_DEFAULT_TUNO: string;
+    readonly GOOGLE_ANALYTICS_TRACKING_CODE: string;
 }
 
 interface ImportMeta {
