@@ -33,9 +33,15 @@ export interface Geracao {
 	geracao: number;
 	elementos: Array<string>;
 }
+
+export interface Ensaiador {
+	atual: string;
+	exs: Array<string>;
+}
+
 export interface AfonsinoFilters {
 	magisters: any;
-	ensaiadores: any;
+	ensaiadores: Ensaiador;
 	geracoes: Array<Geracao>;
 }
 import afonsinoFiltersRaw from "./data/afonsino_filters.json";
