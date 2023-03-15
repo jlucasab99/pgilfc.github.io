@@ -1,6 +1,9 @@
 {
   "magisters": null,
-  "ensaiadores": null,
+  "ensaiadores": {
+    "atual": "sr_cidade",
+    "exs": ["capao"]
+  },
   "geracoes": [
     {
       "geracao": 1994,
