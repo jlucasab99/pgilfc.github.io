@@ -5,6 +5,8 @@
 
 	export let afonsino!: Afonsino;
 	export let imageFallback!: string;
+	export let ensaiador!: string;
+
 	export let generation!: number;
 
 	let modalState: boolean = false;
@@ -19,7 +21,7 @@
 </script>
 
 <div class="stats shadow bg-transparent" on:click={openModal} on:keypress={openModal}>
-	<div class="stat">
+	<div class="stat place-items-center">
 		<div class="stat-value">
 			<div class="avatar">
 				<div class="mask mask-squircle">
@@ -34,6 +36,12 @@
 		</div>
 		<div class="stat-title text-white text-ellipsis overflow-hidden">
 			{afonsino.alcunha}
+			{#if ensaiador == 'atual'}
+				<span class="badge">Ensaiador</span>
+			{/if}
+			{#if ensaiador == 'ex'}
+				<span class="badge">Ex-Ensaiador</span>
+			{/if}
 		</div>
 	</div>
 </div>
