@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { AfonsinoFilters, Geracao, Afonsinos, Afonsino } from "db";
+	import type { AfonsinoFilters, Geracao, Afonsinos, Afonsino, Ensaiador } from "db";
 
 	import Accordion from "@/modules/Accordion.svelte";
 	import AfonsinoComponent from "./Afonsino.svelte";
@@ -10,6 +10,9 @@
 
 	let geracoes: Array<Geracao>;
 	$: geracoes = afonsinoFilters.geracoes;
+
+	let ensaiadores: Ensaiador;
+	$: ensaiadores = afonsinoFilters.ensaiadores;
 
 	let toggleState: boolean = false;
 
@@ -48,7 +51,17 @@
 				on:keypress|stopPropagation
 			>
 				{#each geracao.elementos as alcunha}
-					<AfonsinoComponent afonsino={getAfonsino(alcunha)} imageFallback={imageFallback} generation={index} />
+					{#if ensaiadores.atual == alcunha}
+						<AfonsinoComponent afonsino={getAfonsino(alcunha)} imageFallback={imageFallback} generation={index} ensaiador={'atual'}/>
+					{:else}
+						{#each ensaiadores.exs as exEnsaiador}
+							{#if exEnsaiador == alcunha}
+								<AfonsinoComponent afonsino={getAfonsino(alcunha)} imageFallback={imageFallback} generation={index} ensaiador={'ex'} />
+							{:else}
+								<AfonsinoComponent afonsino={getAfonsino(alcunha)} imageFallback={imageFallback} generation={index} ensaiador={''} />
+							{/if}
+						{/each}
+					{/if}
 				{/each}
 			</div>
 		</Accordion>
