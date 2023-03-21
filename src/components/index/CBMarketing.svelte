@@ -1,7 +1,9 @@
----
----
+<script lang="ts">
+	export let mode!: boolean;
+</script>
 
-<section id="home">
+{#if mode}
+<section id="cb-marketing">
   <div class="hero min-h-screen bg-blue-700 bg-opacity-60">
 		<div class="hero-content flex-col lg:flex-row">
 			<img src="/assets/images/cidade_berco/xvii.jpg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -18,3 +20,4 @@
 		</div>
 	</div>
 </section>
+{/if}
