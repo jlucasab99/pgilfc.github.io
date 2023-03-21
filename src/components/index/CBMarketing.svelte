@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let mode!: boolean;
+	export let enabled!: boolean;
 </script>
 
-{#if mode}
+{#if enabled}
 <section id="cb-marketing">
   <div class="hero min-h-screen bg-blue-700 bg-opacity-60">
 		<div class="hero-content flex-col lg:flex-row">
