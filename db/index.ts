@@ -98,3 +98,24 @@ Object.keys(cdsRaw).forEach((key) => {
 	delete cdsRaw[key];
 });
 export const cds: Record<string, CD> = cdsRaw;
+
+// CB Marketing
+export interface EventMarketing {
+	name: string, // Name of the event. Ex: XVII Cidade Berço
+	description: string, // Description of the event. Ex: BOL Event description
+	date: {
+		startDay: string, // Event start day. Ex: 17
+		endDay: string, // Event end day. Ex: 18
+		firstMonth: string, // Event first month. Ex: Março
+		secondMonth: string // Event second month. Ex: Abril
+	},
+	imagePath: string, // Path to event image: Ex: /assets/images/cidade_berco/xvii.jpg
+	url: {
+		tickets: string, // Url redirection to event tickets. Ex: "https://oficina.bol.pt/Comprar/Bilhetes/120322-xvii_cidade_berco_festival_de_tunas_academicas-a_oficina_ciprl?fbclid=IwAR0IOnHv9TahXkyecPcgDcek0sZvDdF4neaIkIn4BvIewqpSnSYbBBYd4ps"
+		infos: string, // Url redirection to event informations. Ex: "https://fb.me/e/3fLz4dUdD"
+	}
+	enabled: boolean // Event enable or disabled: true -> Event enabled | false -> Event disabled
+};
+
+import eventMarketingRaw from "./data/event_marketing.json";
+export const eventMarketing: EventMarketing = eventMarketingRaw as EventMarketing;
