@@ -1,0 +1,16 @@
+{
+  "name": "XVII Cidade Berço",
+  "description": "Ao quinto ano de existência, em 1999, a Afonsina realizou a sua primeira edição do Cidade Berço - Festival de Tunas Académicas. Foi nesse ano que a cidade de Guimarães recebeu pela primeira vez um leque diverso, constituído por algumas das mais conceituadas Tunas Universitárias. Depois de um interregno causado pela pandemia da Covid-19, o festival regressou em grande, lotando o Grande Auditório do CCVF. Esta 17ª edição do evento promete manter a qualidade que a Tuna Afonsina tem vindo a garantir nas ultimas edições do seu festival.",
+  "date": {
+    "startDay": "17",
+    "endDay": "18",
+    "firstMonth": "Março",
+    "secondMonth": ""
+  },
+  "imagePath": "/assets/images/cidade_berco/xvii.jpg",
+  "url" : {
+    "tickets": "https://oficina.bol.pt/Comprar/Bilhetes/120322-xvii_cidade_berco_festival_de_tunas_academicas-a_oficina_ciprl?fbclid=IwAR0IOnHv9TahXkyecPcgDcek0sZvDdF4neaIkIn4BvIewqpSnSYbBBYd4ps",
+    "infos": "https://fb.me/e/3fLz4dUdD"
+  },
+  "enabled": false
+}
