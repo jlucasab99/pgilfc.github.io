@@ -78,16 +78,6 @@
 									Patrocinadores
 								</button>
 							</p>
-							<Modal id={sponsorModalName()} bind:open={sponsorModalState}>
-								<h3 class="text-3xl font-bold">Patrocinadores</h3>
-								<p class="py-4 border-t border-zinc-700"></p>
-								<Img
-									class="h-auto max-w-[100%] md:h-auto md:max-w-[100%] md:max-h-[500px]"
-									src={cb.sponsors}
-									alt=""
-									fallback={chooseCallback(cb.rectangular)}
-								/>
-							</Modal>
 						{/if}
 					</div>
 					<Img
@@ -99,5 +89,17 @@
 				</div>
 			</div>
 		</Modal>
+		{#if cb.sponsors}
+			<Modal id={sponsorModalName()} bind:open={sponsorModalState}>
+				<h3 class="text-3xl font-bold">Patrocinadores</h3>
+				<p class="py-4 border-t border-zinc-700"></p>
+				<Img
+					class="h-auto max-w-[100%] md:h-auto md:max-w-[100%] md:max-h-[500px]"
+					src={cb.sponsors}
+					alt=""
+					fallback={chooseCallback(cb.rectangular)}
+				/>
+			</Modal>
+		{/if}
 	{/each}
 </div>
