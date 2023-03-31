@@ -53,10 +53,14 @@ export interface CB {
 	tunas_concurso: Array<string>;
 	rectangular?: boolean;
 	playlist?: string;
+	sponsors?: string
 }
 import cbRaw from "./data/cidade_berco.json";
 export const cbs: Array<CB> = (cbRaw as Array<CB>).map((cb: CB) => {
 	cb.imagem = imgLocation(cb.imagem);
+	if (cb.sponsors) {
+		cb.sponsors = imgLocation('sponsors/' + cb.sponsors);
+	}
 	return cb;
 });
 
